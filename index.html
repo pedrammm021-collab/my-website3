@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>پارسا</title>
+
+<style>
+  body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#111;
+    font-family: sans-serif;
+    direction: rtl;
+  }
+
+  button{
+    font-size:40px;
+    padding:20px 40px;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+    background:#00c853;
+    color:white;
+    transition:0.3s;
+  }
+
+  button:hover{
+    transform:scale(1.05);
+  }
+
+  #text{
+    display:none;
+    font-size:60px;
+    color:white;
+    text-align:center;
+  }
+</style>
+</head>
+
+<body>
+
+<div id="container">
+  <button onclick="showText()">پارسا بزن روش</button>
+  <div id="text">غلام فاطمه رو بوسید</div>
+</div>
+
+<script>
+function showText(){
+  document.querySelector("button").style.display = "none";
+  document.getElementById("text").style.display = "block";
+}
+</script>
+
+</body>
+</html>
